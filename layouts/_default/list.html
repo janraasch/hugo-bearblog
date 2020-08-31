@@ -1,0 +1,57 @@
+{{ define "main" }}
+<style>
+  ul {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  li {
+    display: flex;
+  }
+
+  li span {
+    flex: 0 0 130px;
+  }
+
+  li a:visited {
+    color: #6532dc;
+  }
+
+</style>
+<content>
+  {{ if .Data.Singular }}
+  <h3 style="margin-bottom:0">Filtering for "{{ .Title }}"</h3>
+  <small>
+    <a href="{{ "/blog" | relURL }}">Remove filter</a>
+  </small>
+  {{ end }}
+  <ul>
+    {{ range .Pages }}
+    <li>
+      <span>
+        <i>
+          <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+            {{ .Date.Format "02 Jan, 2006" }}
+          </time>
+        </i>
+      </span>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+    </li>
+    {{ else }}
+    <li>
+      No posts yet
+    </li>
+    {{ end }}
+  </ul>
+  {{ if .Data.Singular }}
+  {{else}}
+    <small>
+      <div>
+        {{ range .Site.Taxonomies.tags }}
+        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
+        {{ end }}
+      </div>
+    </small>
+    {{ end }}
+</content>
+{{ end }}

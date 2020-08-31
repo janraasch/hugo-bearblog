@@ -1,0 +1,28 @@
+{
+  "name": "hugo-bearblog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).",
+  "main": "index.js",
+  "devDependencies": {
+    "js-beautify": "^1.13.0"
+  },
+  "scripts": {
+    "test": "npm run beautify",
+    "beautify": "js-beautify layouts/**/*.html -r"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janraasch/hugo-bearblog.git"
+  },
+  "author": {
+    "name": "Jan Raasch",
+    "email": "jan@janraasch.com",
+    "url": "https://www.janraasch.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janraasch/hugo-bearblog/issues"
+  },
+  "homepage": "https://github.com/janraasch/hugo-bearblog#readme"
+}
