@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: https://janraasch.github.io/hugo-bearblog/sitemap.xml
