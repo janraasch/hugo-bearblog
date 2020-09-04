@@ -1,11 +1,6 @@
 +++
 title = "Hugo"
 menu = "main"
-date = "2020-01-02"
-tags = [
-    "blogging",
-    "static site generator"
-]
 +++
 
 # Hugo

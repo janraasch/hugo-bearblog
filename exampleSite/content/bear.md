@@ -1,13 +1,6 @@
 +++
 title = "Bear"
 menu = "main"
-date = "2020-01-01"
-tags = [
-    "blogging",
-    "no javascript",
-    "no stylesheets",
-    "no trackers"
-]
 +++
 
 # Bear

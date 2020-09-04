@@ -30,9 +30,23 @@ Please check out the [config.toml](https://github.com/janraasch/hugo-bearblog/bl
 
 If you are starting fresh, simply copy over the contents of the `exampleSite`-directory included in this theme to your source directory. That should give you a good idea about how things work, and then you can go on from there to make the site your own.
 
-### Adding content
+### Adding / editing content
 
-You can add **a new post/page** via running
+#### Index-Page
+
+The contents of the `index`-page may be changed by editing your `content/_index.md`-file.
+
+#### Page
+
+You can add **a new page** via running
+
+```
+hugo new my-new-page.md
+```
+
+#### Blog-Post
+
+You can add **a new blog-post** via running
 
 ```
 hugo new blog/my-new-post.md
@@ -63,5 +77,4 @@ A special thank you goes out to [Herman](https://herman.bearblog.dev), for creat
 [paypal-dot-me]: https://www.paypal.me/janraasch/7,00
 [github-sponsors]: https://github.com/sponsors/janraasch
 [insert-coins-svg]: https://img.shields.io/badge/insert-coins-11dde2.svg
-
 [hugo-setup-guide]: https://gohugo.io/getting-started/installing
