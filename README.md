@@ -1,4 +1,4 @@
-# Hugo ʕ•ᴥ•ʔ Bear Blog ![Test](https://github.com/janraasch/hugo-bearblog/workflows/CI/badge.svg?branch=master&event=push)
+# Hugo ʕ•ᴥ•ʔ Bear Blog ![Test](https://github.com/janraasch/hugo-bearblog/workflows/CI/badge.svg?branch=master&event=push) [![Pay me][paypal-svg]][paypal-dot-me] [![Sponsor me][github-sponsors-svg]][github-sponsors]
 
 🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
 
@@ -7,6 +7,12 @@
 ## Demo
 
 For a current & working demo of this theme, please check out https://janraasch.github.io/hugo-bearblog/ 🎯.
+
+## Sponsor 💟
+
+Support my work on this theme via [GitHub Sponsors][github-sponsors] (recurring) or [PayPal][paypal-dot-me] (one-time).
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api/?username=janraasch)][github-sponsors]
 
 ## Installation
 
@@ -61,12 +67,6 @@ Please use [GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) an
 
 If you do not have a GitHub-account, please hit me up via e-mail (see [janraasch.com](https://www.janraasch.com)).
 
-
-## Sponsor [![Pay me][insert-coins-svg]][paypal-dot-me]
-Please consider supporting my work via [GitHub Sponsors][github-sponsors] or [PayPal][paypal-dot-me].
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api/?username=janraasch)][github-sponsors]
-
 ## Special Thanks 🎁
 
 A special thank you goes out to [Herman](https://herman.bearblog.dev), for creating the original [ʕ•ᴥ•ʔ Bear Blog](https://bearblog.dev/).
@@ -76,5 +76,6 @@ A special thank you goes out to [Herman](https://herman.bearblog.dev), for creat
 
 [paypal-dot-me]: https://www.paypal.me/janraasch/7,00
 [github-sponsors]: https://github.com/sponsors/janraasch
-[insert-coins-svg]: https://img.shields.io/badge/insert-coins-11dde2.svg
+[paypal-svg]: https://img.shields.io/badge/insert-coins-11dde2.svg?logo=paypal
+[github-sponsors-svg]: https://img.shields.io/badge/sponsor-me-ee4aaa.svg?logo=github
 [hugo-setup-guide]: https://gohugo.io/getting-started/installing
