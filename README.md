@@ -76,6 +76,6 @@ A special thank you goes out to [Herman](https://herman.bearblog.dev), for creat
 
 [paypal-dot-me]: https://www.paypal.me/janraasch/7,00
 [github-sponsors]: https://github.com/sponsors/janraasch
-[paypal-svg]: https://img.shields.io/badge/insert-coins-11dde2.svg?logo=paypal
-[github-sponsors-svg]: https://img.shields.io/badge/sponsor-me-ee4aaa.svg?logo=github
+[paypal-svg]: https://img.shields.io/badge/onetime-donation-11dde2.svg?logo=paypal
+[github-sponsors-svg]: https://img.shields.io/badge/recurring-sponsorship-ee4aaa.svg?logo=github
 [hugo-setup-guide]: https://gohugo.io/getting-started/installing
