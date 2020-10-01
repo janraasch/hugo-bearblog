@@ -4,6 +4,8 @@
 
 > Free, no-nonsense, super-fast blogging.
 
+This theme now includes a dark color scheme to support dark mode 🦉 ⬛️!
+
 ## Demo
 
 For a current & working demo of this theme, please check out https://janraasch.github.io/hugo-bearblog/ 🎯.
