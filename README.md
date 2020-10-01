@@ -4,15 +4,13 @@
 
 > Free, no-nonsense, super-fast blogging.
 
-This theme now includes a dark color scheme to support dark mode 🦉 ⬛️!
-
 ## Screenshots
 
 ⬜️ [Light][light-screenshot]
 
 ⬛️ [Dark][dark-screenshot]
 
-If the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html) for the implementation.
+When the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file for the implementation.
 
 ## Demo
 
