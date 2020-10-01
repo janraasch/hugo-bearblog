@@ -5,7 +5,7 @@
     padding: 20px;
     max-width: 720px;
     text-align: left;
-    background-color: white;
+    background-color: #fff;
     word-wrap: break-word;
     overflow-wrap: break-word;
     line-height: 1.5;
@@ -25,6 +25,7 @@
 
   a {
     color: #3273dc;
+    /*color: #ff5e6c;*/
   }
 
   .title {
@@ -63,21 +64,21 @@
 
   code {
     padding: 2px 5px;
-    background-color: #eee;
+    background-color: #f2f2f2;
   }
 
   pre code {
-    border-left: 1px solid #999;
-    color: #555;
+    color: #222;
     display: block;
-    padding: 10px;
+    padding: 20px;
     white-space: pre-wrap;
+    font-size: 14px;
   }
 
   blockquote {
     border-left: 1px solid #999;
-    color: #555;
-    padding-left: 10px;
+    color: #222;
+    padding-left: 20px;
     font-style: italic;
   }
 
@@ -94,6 +95,68 @@
   .errorlist {
     color: #eba613;
     font-size: small;
+  }
+
+  /* blog posts */
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: #8b6fcb;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #333;
+      color: #ddd;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    strong,
+    b {
+      color: #eee;
+    }
+
+    a {
+      color: #8cc2dd;
+    }
+
+    code {
+      background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
+    }
+
+    blockquote {
+      color: #ccc;
+    }
+
+    textarea,
+    input {
+      background-color: #252525;
+      color: #ddd;
+    }
+
+    .helptext {
+      color: #aaa;
+    }
   }
 
 </style>
