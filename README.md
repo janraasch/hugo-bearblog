@@ -6,6 +6,14 @@
 
 This theme now includes a dark color scheme to support dark mode 🦉 ⬛️!
 
+## Screenshots
+
+⬜️ [Light][light-screenshot]
+
+⬛️ [Dark][dark-screenshot]
+
+If the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html) for the implementation.
+
 ## Demo
 
 For a current & working demo of this theme, please check out https://janraasch.github.io/hugo-bearblog/ 🎯.
@@ -81,3 +89,5 @@ A special thank you goes out to [Herman](https://herman.bearblog.dev), for creat
 [paypal-svg]: https://img.shields.io/badge/onetime-donation-11dde2.svg?logo=paypal
 [github-sponsors-svg]: https://img.shields.io/badge/recurring-sponsorship-ee4aaa.svg?logo=github
 [hugo-setup-guide]: https://gohugo.io/getting-started/installing
+[light-screenshot]: https://github.com/janraasch/hugo-bearblog/blob/master/images/screenshot.png
+[dark-screenshot]: https://github.com/janraasch/hugo-bearblog/blob/master/images/screenshot-dark.png
