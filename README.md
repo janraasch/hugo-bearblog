@@ -87,5 +87,5 @@ A special thank you goes out to [Herman](https://herman.bearblog.dev), for creat
 [paypal-svg]: https://img.shields.io/badge/onetime-donation-11dde2.svg?logo=paypal
 [github-sponsors-svg]: https://img.shields.io/badge/recurring-sponsorship-ee4aaa.svg?logo=github
 [hugo-setup-guide]: https://gohugo.io/getting-started/installing
-[light-screenshot]: https://github.com/janraasch/hugo-bearblog/blob/master/images/screenshot.png
-[dark-screenshot]: https://github.com/janraasch/hugo-bearblog/blob/master/images/screenshot-dark.png
+[light-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot.png
+[dark-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot-dark.png
