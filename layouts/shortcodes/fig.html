@@ -1,0 +1,53 @@
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+{{ $tinyw := default "400x q50 " }}
+{{ $smallw := default "800x q50 " }}
+{{ $largew := default "1600x q50 " }}
+
+{{/* resize the src image to the given sizes, but only downscale */}}
+{{ $tiny := $src.Resize $tinyw }}
+{{ $small := $src.Resize $smallw }}
+{{ $large := $src.Resize $largew }}
+
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+    {{- if .Get "link" -}}
+        <a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- end }}
+    <!-- Show responsive images, only show an image if the original is at least
+      25% larger to ensure enough difference between the two -->
+    <img
+      loading="lazy"
+      {{ with .Get "sizes" }}sizes='{{.}}'{{ else }}sizes="(min-width: 35em) 720px, 100vw"{{ end }}
+      srcset='
+      {{ if ge (mul $src.Width 0.75) "400" }}{{ with $tiny.RelPermalink }}{{.}} 400w{{ end }}{{ end }}
+      {{ if ge (mul $src.Width 0.75) "800" }}{{ with $small.RelPermalink }}, {{.}} 800w{{ end }}{{ end }}
+      {{ if ge (mul $src.Width 0.75) "1600" }}{{ with $large.RelPermalink }}, {{.}} 1600w {{ end }}{{ end }}
+      {{ with $src }}, {{.RelPermalink}} {{.Width}}w {{ end }}'
+      {{ if .Get (print $large) }}src="{{ $large.RelPermalink }}"{{ else }}src="{{ $src.RelPermalink }}"{{ end }}
+      width="{{ $src.Width }}" height="{{ $src.Height }}"
+      {{- if or (.Get "alt") (.Get "caption") }}
+      alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+      {{- end -}}
+    />
+    {{- if .Get "link" }}</a>{{ end -}}
+    {{- if or (or (.Get "title") (.Get "caption")) (.Get "attr") -}}
+        <figcaption>
+            {{ with (.Get "title") -}}
+                <h4>{{ . }}</h4>
+            {{- end -}}
+            {{- if or (.Get "caption") (.Get "attr") -}}<p>
+                {{- .Get "caption" | markdownify -}}
+                {{- with .Get "attrlink" }}
+                    <a href="{{ . }}">
+                {{- end -}}
+                {{- .Get "attr" | markdownify -}}
+                {{- if .Get "attrlink" }}</a>{{ end }}</p>
+            {{- end }}
+        </figcaption>
+    {{- end }}
+</figure>
