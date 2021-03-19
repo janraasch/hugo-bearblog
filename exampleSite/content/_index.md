@@ -1,5 +1,27 @@
 # A match made in heaven
 
+I would like for people to express interest in my services by clicking »Sign up«:
+
+<form class="signup" id="signup_form" method="POST">
+<p>
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="Name" required="" id="name">
+</p>
+<p>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email" placeholder="E-mail address" required="" id="email">
+</p>
+<p>
+    <label for="service">Service interested in:</label>
+    <input type="text" name="service" placeholder="Service" id="service">
+</p>
+<p>
+    <button type="submit">Sign Up</button>
+</p>
+</form>
+
+---
+
 There is a website obesity crisis. Bloated websites full of scripts, ads, and trackers are slowing your readers down every time they try to read your well-crafted content.
 
 Hugo Bear Blog is all you need to build a fantastic and optimized site or blog. It works perfectly on **any** viewing device. All you need to focus on is writing good content.

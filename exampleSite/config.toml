@@ -42,3 +42,8 @@ ignoreErrors = ["error-disable-taxonomy"]
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
   # hideMadeWithLine = true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
