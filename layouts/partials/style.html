@@ -64,18 +64,20 @@
 
   code {
     padding: 2px 5px;
-  }
-
-  :not(div.highlight)>pre code,
-  :not(pre)>code {
     background-color: #f2f2f2;
   }
 
   pre code {
+    color: #222;
     display: block;
     padding: 20px;
     white-space: pre-wrap;
     font-size: 14px;
+  }
+
+  div.highlight code {
+    background-color: unset;
+    color: initial;
   }
 
   blockquote {
@@ -139,9 +141,12 @@
       color: #8cc2dd;
     }
 
-    :not(div.highlight)>pre code,
-    :not(pre)>code {
+    code {
       background-color: #777;
+    }
+
+    pre code {
+      color: #ddd;
     }
 
     blockquote {
