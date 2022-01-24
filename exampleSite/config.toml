@@ -1,4 +1,5 @@
-
+# Base URL used when generating links to your pages
+# Set to the URL for your site
 baseURL = "https://example.com"
 
 # The name of this wonderful theme ;-).
