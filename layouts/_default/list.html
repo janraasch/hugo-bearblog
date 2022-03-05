@@ -16,7 +16,7 @@
           </time>
         </i>
       </span>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
     </li>
     {{ else }}
     <li>
