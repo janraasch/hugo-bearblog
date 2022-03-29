@@ -5,7 +5,7 @@
   "description": "🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).",
   "main": "index.js",
   "devDependencies": {
-    "js-beautify": "^1.14.0"
+    "js-beautify": "^1.14.2"
   },
   "scripts": {
     "test": "npm run beautify",
