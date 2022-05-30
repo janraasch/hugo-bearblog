@@ -66,6 +66,17 @@ You can add **a new blog-post** via running
 hugo new blog/my-new-post.md
 ```
 
+
+## [Add hugo contact form](https://fabform.io/a/hugo-contact-form)
+
+```
+<form action="https://fabform.io/f/{form-id}" method="post">
+ <label for="email">Your Email</label>
+ <input name="email" type="email">
+ <button type="submit">Submit</button> 
+</form>
+```
+
 ### Adding your branding / colors / css
 
 Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file to find out which CSS-styles are applied by default.
@@ -74,6 +85,7 @@ Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you
 Please use [GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) and [Pull Requests](https://github.com/janraasch/hugo-bearblog/pulls).
 
 If you do not have a GitHub-account, please hit me up via e-mail (see [janraasch.com](https://www.janraasch.com)).
+
 
 ## Special Thanks 🎁
 
