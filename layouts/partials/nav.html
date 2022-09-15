@@ -3,5 +3,5 @@
 <a href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
 {{ with .Site.GetPage "/blog" }}
-<a href="{{ "/blog" | relURL }}">Blog</a>
+<a href="{{ .URL }}">Blog</a>
 {{ end }}
