@@ -1,4 +1,4 @@
-# Hugo ʕ•ᴥ•ʔ Bear Blog ![Test](https://github.com/janraasch/hugo-bearblog/workflows/CI/badge.svg?branch=master&event=push) [![Pay me][paypal-svg]][paypal-dot-me] [![Sponsor me][github-sponsors-svg]][github-sponsors]
+# Hugo ʕ•ᴥ•ʔ Bear Blog ![Test](https://github.com/janraasch/hugo-bearblog/workflows/CI/badge.svg?branch=master&event=push)
 
 🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
 
@@ -15,12 +15,6 @@ For a current & working demo of this theme, please check out https://janraasch.g
 ⬛️ [Dark][dark-screenshot]
 
 When the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file for the implementation.
-
-## Sponsor 💟
-
-Support my work on this theme via [GitHub Sponsors][github-sponsors] (recurring) or [PayPal][paypal-dot-me] (one-time).
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api/?username=janraasch)][github-sponsors]
 
 ## Installation
 
@@ -82,10 +76,6 @@ A special thank you goes out to [Herman](https://herman.bearblog.dev), for creat
 ## License
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Jan Raasch](https://www.janraasch.com)
 
-[paypal-dot-me]: https://www.paypal.me/janraasch/7,00
-[github-sponsors]: https://github.com/sponsors/janraasch
-[paypal-svg]: https://img.shields.io/badge/onetime-donation-11dde2.svg?logo=paypal
-[github-sponsors-svg]: https://img.shields.io/badge/recurring-sponsorship-ee4aaa.svg?logo=github
 [hugo-setup-guide]: https://gohugo.io/getting-started/installing
 [light-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot.png
 [dark-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot-dark.png
