@@ -1,3 +1,8 @@
-  <!-- A partial to be overwritten by the user.
+<!-- A partial to be overwritten by the user.
   Simply place a custom_body.html into
   your local /layouts/partials-directory -->
+
+
+{{ if .Site.Params.nolytics.enabled }}
+<img src="{{ .Site.Params.nolytics.worker_url }}?path={{ .URL }}&name={{ .Title }}" alt="">
+{{ end }}
