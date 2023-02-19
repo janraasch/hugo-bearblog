@@ -32,6 +32,10 @@ For more information, read the official [setup guide][hugo-setup-guide] of Hugo.
 
 Please check out the [config.toml](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/config.toml) included in the [exampleSite](https://github.com/janraasch/hugo-bearblog/tree/master/exampleSite) of this theme.
 
+### Nolytics usage
+
+This theme fork comes with builtin support for [nolytics](https://github.com/nolytics). To configure nolytics, first enable it in `config.toml` and then set the worker url.
+
 ## Content & structure
 
 ### Starting fresh
