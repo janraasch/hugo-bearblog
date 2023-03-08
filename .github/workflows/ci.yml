@@ -10,7 +10,8 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    name: Build
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
@@ -23,10 +24,25 @@ jobs:
 
     - name: Build local ./exampleSite
       run: hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://janraasch.github.io/hugo-bearblog/
-
-    - name: Deploy to GitHub Pages
-      if: github.event_name == 'push'
-      uses: peaceiris/actions-gh-pages@v3.9.2
+    
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+        name: build
+        path: ./public
+
+  deploy:
+    needs: build
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/heads/source' }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: ./public
+      - uses: peaceiris/actions-gh-pages@v3.9.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
