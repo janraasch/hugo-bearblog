@@ -23,7 +23,7 @@ jobs:
         hugo-version: latest
 
     - name: Build local ./exampleSite
-      run: hugo --ignoreCache --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://janraasch.github.io/hugo-bearblog/
+      run: hugo --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://janraasch.github.io/hugo-bearblog/
     
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
@@ -60,3 +60,7 @@ jobs:
         with:
           name: build
           path: ./public
+      - uses: peaceiris/actions-gh-pages@v3.9.2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
