@@ -23,7 +23,7 @@ jobs:
         hugo-version: latest
 
     - name: Build local ./exampleSite
-      run: hugo --ignoreCache --minify --gc --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://janraasch.github.io/hugo-bearblog/
+      run: hugo --ignoreCache --destination ../public --source ./exampleSite --themesDir ../.. --baseURL https://janraasch.github.io/hugo-bearblog/
     
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
