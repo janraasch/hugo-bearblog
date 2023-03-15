@@ -67,8 +67,6 @@ Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you
 ## Issues / Feedback / Contributing
 Please use [GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) and [Pull Requests](https://github.com/janraasch/hugo-bearblog/pulls).
 
-If you do not have a GitHub-account, please hit me up via e-mail (see [janraasch.com](https://www.janraasch.com)).
-
 ## Special Thanks 🎁
 
 A special thank you goes out to [Herman](https://herman.bearblog.dev), for creating the original [ʕ•ᴥ•ʔ Bear Blog](https://bearblog.dev/).
