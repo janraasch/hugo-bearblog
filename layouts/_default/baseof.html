@@ -2,13 +2,6 @@
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170196086-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
-      gtag('config', 'UA-170196086-1', { 'anonymize_ip': true });
-  </script>
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,12 +39,4 @@
   your local /layouts/partials-directory -->
   {{- partial "custom_body.html" . -}}
 </body>
-<script>
-  const flagemojiToPNG = (flag) => {
-      var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt()).map(char => String.fromCharCode(char-127397).toLowerCase()).join('')
-      return "<img src='https://flagcdn.com/24x18/" + countryCode + ".png'>"
-  }
-      var reg = new RegExp('(?:\ud83c[\udde6-\uddff]){2}', 'g');
-      document.body.innerHTML = document.body.innerHTML.replaceAll(reg, flagemojiToPNG);
-</script>
 </html>

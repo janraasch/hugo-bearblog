@@ -1,3 +1,11 @@
-  <!-- A partial to be overwritten by the user.
-  Simply place a custom_body.html into
-  your local /layouts/partials-directory -->
+<script>
+
+  const flagemojiToPNG = (flag) => {
+      var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt()).map(char => String.fromCharCode(char-127397).toLowerCase()).join('')
+      return "<img src='https://flagcdn.com/24x18/" + countryCode + ".png'>"
+  }
+
+  var reg = new RegExp('(?:\ud83c[\udde6-\uddff]){2}', 'g');
+  document.body.innerHTML = document.body.innerHTML.replaceAll(reg, flagemojiToPNG);
+  
+</script>
