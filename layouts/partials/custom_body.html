@@ -1,5 +1,36 @@
 <script>
 
+document.addEventListener("DOMContentLoaded", () => {
+  var switcher = document.getElementById("toggle");
+
+  switcher.addEventListener("click", () => {
+
+    if (localStorage.getItem('darkMode') === null) {
+      localStorage.setItem("darkMode", "true");
+      document.styleSheets[0].cssRules[23].media.mediaText =
+        "(prefers-color-scheme: dark)";
+    } else {
+      document.styleSheets[0].cssRules[23].media.mediaText =
+        "(prefers-color-scheme: light)";
+
+      setTimeout(function () {
+        localStorage.removeItem("darkMode");
+      }, 100);
+    }
+  });
+
+  if (localStorage.getItem("darkMode")) {
+    document.styleSheets[0].cssRules[23].media.mediaText =
+      "(prefers-color-scheme: dark)";
+  } else {
+    document.styleSheets[0].cssRules[23].media.mediaText =
+      "(prefers-color-scheme: light)";
+  }
+
+  document.body.style.visibility = "visible";
+
+});
+
   const flagemojiToPNG = (flag) => {
     var countryCode = Array.from(flag, (codeUnit) => codeUnit.codePointAt()).map(char => String.fromCharCode(char - 127397).toLowerCase()).join('')
     return "<img src='https://flagcdn.com/24x18/" + countryCode + ".png'>"
