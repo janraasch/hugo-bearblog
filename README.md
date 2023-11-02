@@ -24,13 +24,13 @@ If you already have a Hugo site on your machine, you can simply add this theme v
 git submodule add https://github.com/janraasch/hugo-bearblog.git themes/hugo-bearblog
 ```
 
-Then, adjust the `config.toml` as detailed below.
+Then, adjust the `hugo.toml` as detailed below.
 
 For more information, read the official [setup guide][hugo-setup-guide] of Hugo.
 
-## Adjust configuration / config.toml
+## Adjust configuration / hugo.toml
 
-Please check out the [config.toml](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/config.toml) included in the [exampleSite](https://github.com/janraasch/hugo-bearblog/tree/master/exampleSite) of this theme.
+Please check out the [hugo.toml](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/hugo.toml) included in the [exampleSite](https://github.com/janraasch/hugo-bearblog/tree/master/exampleSite) of this theme.
 
 ## Content & structure
 
