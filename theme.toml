@@ -9,7 +9,7 @@ homepage = "https://github.com/janraasch/hugo-bearblog"
 demosite = "https://janraasch.github.io/hugo-bearblog/"
 tags = ["blog", "responsive", "minimal", "seo", "clean", "simple", "light", "minimalist", "mobile", "fast", "white", "minimalistic", "reading", "dark mode"]
 features = ["favicon", "seo", "no stylesheets", "no javascript", "rss", "dark mode"]
-min_version = "0.73.0"
+min_version = "v0.110.0"
 # https://gohugo.io/content-management/taxonomies#default-taxonomies
 # https://gohugo.io/templates/taxonomy-templates/#example-list-tags-in-a-single-page-template
 # https://gohugo.io/templates/taxonomy-templates/#example-list-all-site-tags
