@@ -1,3 +1,10 @@
++++
+# This title is used as the og:title on Hugo's internal
+# opengraph structured data template on the home page.
+# See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
+title = "Hugo ʕ•ᴥ•ʔ Bear"
++++
+
 # A match made in heaven
 
 There is a website obesity crisis. Bloated websites full of scripts, ads, and trackers are slowing your readers down every time they try to read your well-crafted content.
