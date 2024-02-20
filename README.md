@@ -20,7 +20,7 @@ When the user's browser is running »dark mode«, the dark color scheme will be 
 
 If you already have a Hugo site on your machine, you can simply add this theme via
 
-```
+```bash
 git submodule add https://github.com/janraasch/hugo-bearblog.git themes/hugo-bearblog
 ```
 
@@ -48,7 +48,7 @@ The contents of the `index`-page may be changed by editing your `content/_index.
 
 You can add **a new page** via running
 
-```
+```bash
 hugo new my-new-page.md
 ```
 
@@ -56,7 +56,7 @@ hugo new my-new-page.md
 
 You can add **a new blog-post** via running
 
-```
+```bash
 hugo new blog/my-new-post.md
 ```
 
@@ -66,6 +66,13 @@ Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you
 
 ## Issues / Feedback / Contributing
 Please use [GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) and [Pull Requests](https://github.com/janraasch/hugo-bearblog/pulls).
+
+## Development
+Run the `exampleSite` locally via
+
+```bash
+hugo server --source ./exampleSite --themesDir ../..
+```
 
 ## Special Thanks 🎁
 
