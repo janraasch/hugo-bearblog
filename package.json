@@ -9,7 +9,10 @@
   },
   "scripts": {
     "test": "npm run beautify",
-    "beautify": "js-beautify layouts/**/*.html -r"
+    "beautify": "js-beautify layouts/**/*.html -r",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -24,5 +27,10 @@
   "bugs": {
     "url": "https://github.com/janraasch/hugo-bearblog/issues"
   },
-  "homepage": "https://github.com/janraasch/hugo-bearblog#readme"
+  "homepage": "https://github.com/janraasch/hugo-bearblog#readme",
+  "dependencies": {
+    "next": "^15.1.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
 }
