@@ -1,86 +1,36 @@
-# Hugo ʕ•ᴥ•ʔ Bear Blog ![Test](https://github.com/janraasch/hugo-bearblog/workflows/CI/badge.svg?branch=master&event=push)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-🧸 A [Hugo](https://gohugo.io/)-theme based on [Bear Blog](https://bearblog.dev).
+## Getting Started
 
-> Free, no-nonsense, super-fast blogging.
-
-## Demo
-
-For a current & working demo of this theme, please check out https://janraasch.github.io/hugo-bearblog/ 🎯.
-
-## Screenshots
-
-⬜️ [Light][light-screenshot]
-
-⬛️ [Dark][dark-screenshot]
-
-When the user's browser is running »dark mode«, the dark color scheme will be used automatically. The default is the light/white color scheme. Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file for the implementation.
-
-## Installation
-
-If you already have a Hugo site on your machine, you can simply add this theme via
+First, run the development server:
 
 ```bash
-git submodule add https://github.com/janraasch/hugo-bearblog.git themes/hugo-bearblog
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Then, adjust the `hugo.toml` as detailed below.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-For more information, read the official [setup guide][hugo-setup-guide] of Hugo.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Adjust configuration / hugo.toml
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Please check out the [hugo.toml](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/hugo.toml) included in the [exampleSite](https://github.com/janraasch/hugo-bearblog/tree/master/exampleSite) of this theme.
+## Learn More
 
-## Content & structure
+To learn more about Next.js, take a look at the following resources:
 
-### Starting fresh
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-If you are starting fresh, simply copy over the contents of the `exampleSite`-directory included in this theme to your source directory. That should give you a good idea about how things work, and then you can go on from there to make the site your own.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-### Adding / editing content
+## Deploy on Vercel
 
-#### Index-Page
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-The contents of the `index`-page may be changed by editing your `content/_index.md`-file.
-
-#### Page
-
-You can add **a new page** via running
-
-```bash
-hugo new my-new-page.md
-```
-
-#### Blog-Post
-
-You can add **a new blog-post** via running
-
-```bash
-hugo new blog/my-new-post.md
-```
-
-### Adding your branding / colors / css
-
-Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file to find out which CSS-styles are applied by default.
-
-## Issues / Feedback / Contributing
-Please use [GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) and [Pull Requests](https://github.com/janraasch/hugo-bearblog/pulls).
-
-## Development
-Run the `exampleSite` locally via
-
-```bash
-hugo server --source ./exampleSite --themesDir ../..
-```
-
-## Special Thanks 🎁
-
-A special thank you goes out to [Herman](https://herman.bearblog.dev), for creating the original [ʕ•ᴥ•ʔ Bear Blog](https://bearblog.dev/).
-
-## License
-[MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Jan Raasch](https://www.janraasch.com)
-
-[hugo-setup-guide]: https://gohugo.io/getting-started/installing
-[light-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot.png
-[dark-screenshot]: https://raw.githubusercontent.com/janraasch/hugo-bearblog/master/images/screenshot-dark.png
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
