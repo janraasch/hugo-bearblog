@@ -1,0 +1,62 @@
+name: 🐛 Bug Report
+description: Report a bug in Hugo ʕ•ᴥ•ʔ Bear Blog
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Before you proceed:
+        
+        1. 🔍 Please search [existing issues](https://github.com/janraasch/hugo-bearblog/issues) to avoid duplicates
+        2. 💭 For general usage questions, consider posting on [Hugo Discourse](https://discourse.gohugo.io/)
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is
+      placeholder: When I do X, Y happens instead of Z...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: A clear and concise description of what you expected to happen
+    validations:
+      required: true
+
+  - type: input
+    id: hugo-version
+    attributes:
+      label: Hugo version
+      description: Output of `hugo version`
+      placeholder: Hugo v0.92.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: config
+    attributes:
+      label: Configuration
+      description: Relevant parts of your Hugo configuration
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here (screenshots, error messages, etc.)
