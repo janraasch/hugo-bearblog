@@ -6,14 +6,14 @@ Thank you for your interest in contributing to Hugo ʕ•ᴥ•ʔ Bear Blog! Thi
 
 If you have questions about using the theme or implementing specific features:
 
-1. Check our [existing GitHub issues](https://github.com/your-username/hugo-bear/issues) - your question might already be answered
+1. Check our [existing GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) - your question might already be answered
 2. Consider posting on the [Hugo Discourse](https://discourse.gohugo.io/) - there's a larger community there that might help, and your question could benefit others
 
 ## 🐛 Found a Bug?
 
 If you've discovered a bug:
 
-1. First, search our [existing issues](https://github.com/your-username/hugo-bear/issues) to see if it's already reported
+1. First, search our [existing issues](https://github.com/janraasch/hugo-bearblog/issues) to see if it's already reported
 2. If not, create a new issue with:
    - A clear description of the problem
    - Steps to reproduce the issue
