@@ -64,8 +64,9 @@ hugo new blog/my-new-post.md
 
 Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file to find out which CSS-styles are applied by default.
 
-## Issues / Feedback / Contributing
-Please use [GitHub issues](https://github.com/janraasch/hugo-bearblog/issues) and [Pull Requests](https://github.com/janraasch/hugo-bearblog/pulls).
+## Contributing 🤝
+
+Interested in contributing to Hugo ʕ•ᴥ•ʔ Bear Blog? Thanks for your interest! Please take a look at our [Contributing Guidelines](CONTRIBUTING.md) first.
 
 ## Development
 Run the `exampleSite` locally via
