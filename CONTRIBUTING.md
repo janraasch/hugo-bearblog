@@ -44,4 +44,13 @@ Pull requests are welcome! Please:
 4. Include appropriate documentation updates
 5. Test your changes thoroughly
 
+## 💝 Share Your Experience
+We love hearing how people are using Hugo ʕ•ᴥ•ʔ Bear Blog! If you're using the theme for your website, have made interesting customizations, or just want to share your appreciation:
+
+1. Visit our [issues](https://github.com/janraasch/hugo-bearblog/issues) page
+2. Select "Share Your Story" template
+3. Tell us about your experience, share screenshots, or show off your customizations
+
+Your stories help build our community and might inspire others in their journey!
+
 Thank you for helping make Hugo ʕ•ᴥ•ʔ Bear Blog better! 🎉
