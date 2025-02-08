@@ -66,7 +66,7 @@ Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you
 
 ## Remixes 🎭
 
-The community has created some interesting variations of the Hugo ʕ•ᴥ•ʔ Bear Blog. While the main theme stays true to the minimal Bear Blog philosophy, these remixes experiment with additional features:
+The community has created some interesting variations of Hugo ʕ•ᴥ•ʔ Bear Blog. While the main theme stays true to the minimal Bear Blog philosophy, these remixes experiment with additional features:
 
 * [Hugo ʕ•ᴥ•ʔ Bear Blog ✨ Neo](https://github.com/rokcso/hugo-bearblog-neo/) - Features Chinese documentation and an innovative "Toast" upvote system.
 
