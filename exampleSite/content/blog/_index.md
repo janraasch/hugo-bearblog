@@ -1,3 +1,4 @@
 +++
 title = "Blog"
+menu = "main"
 +++

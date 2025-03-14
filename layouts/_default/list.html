@@ -6,7 +6,7 @@
     <a href="{{ "blog" | relURL }}">Remove filter</a>
   </small>
   {{ end }}
-  <ul class="blog-posts">
+  <ul class="posts">
     {{ range .Pages }}
     <li>
       <span>
@@ -24,8 +24,7 @@
     </li>
     {{ end }}
   </ul>
-  {{ if .Data.Singular }}
-  {{else}}
+    {{ if not .Data.Singular }}
     <small>
       <div>
         {{ range .Site.Taxonomies.tags }}
