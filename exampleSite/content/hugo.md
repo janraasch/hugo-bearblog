@@ -1,7 +1,7 @@
 +++
 title = "Hugo"
 menu = "main"
-weight = "10"
+weight = 10
 +++
 
 # Hugo
