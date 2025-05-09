@@ -1,6 +1,7 @@
 +++
 title = "Bear"
 menu = "main"
+weight = "20"
 +++
 
 # Bear
