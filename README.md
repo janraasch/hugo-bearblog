@@ -91,6 +91,20 @@ Run the `exampleSite` locally via
 hugo server --source ./exampleSite --themesDir ../..
 ```
 
+In case you want to test functionalities and have to use hugo commands you'll have to append ´--source ./exampleSite --themesDir ../..´ to them.
+
+For example:
+
+```bash
+hugo new blog/post.md --source ./exampleSite --themesDir ../..
+```
+
+Same thing for pages:
+
+```bash
+hugo new page.md  --source ./exampleSite --themesDir ../..
+```
+
 ## Special Thanks 🎁
 
 A special thank you goes out to [Herman](https://herman.bearblog.dev), for creating the original [ʕ•ᴥ•ʔ Bear Blog](https://bearblog.dev/).
