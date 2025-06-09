@@ -34,7 +34,7 @@ Please check out the [hugo.toml](https://github.com/janraasch/hugo-bearblog/blob
 
 ### Post Navigation Setting
 
-In case the user ends up reading more than one blog post, in order to read another they have
+In case a user ends up reading more than one blog post, to read another they are forced to
 to go to the `/blog` page.
 
 By enabling, in `hugo.toml`:
@@ -44,8 +44,8 @@ By enabling, in `hugo.toml`:
     enablePostNavigator = true
 ```
 
-It adds a navigator, at the end of the blog post content, so that the user can go to the next
-or previous post.
+It adds a navigator, at the end of the blog post, so that the user can go to the next
+or previous post without having to go back to the `\blog` page.
 
 ## Content & structure
 
@@ -107,7 +107,7 @@ Run the `exampleSite` locally via
 hugo server --source ./exampleSite --themesDir ../..
 ```
 
-In case you want to test functionalities and have to use hugo commands you'll have to append `--source ./exampleSite --themesDir ../..` to them.
+In case you want to test functionalities and use hugo commands, in the root directory, you'll have to append `--source ./exampleSite --themesDir ../..` to them.
 
 For example:
 
