@@ -12,53 +12,8 @@
 <content>
     {{ .Content }}
 </content>
-<!--
-     Tenho que arranjar os links dos posts...
-     Colocar uma opção que dê toggle nesta situação.
 
-     Dá fetch dos posts todos,
-     [a,b,c,d]
-     arranja um apontador para o imediatamente a seguir e
-     o imediatamente atrás.
-
-
-     {{ if not .Data.Singular }}
-     <small>
-     <div>
-     {{ range .Site.Taxonomies.tags }}
-     <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>&nbsp;
-     {{ end }}
-     </div>
-     </small>
-     {{ end }}
-
--->
-
-<div style="font-size:0.8em;display:flex;gap:16px;justify-content:center;">
-    <p>
-        {{ if .PrevInSection }}
-        <a href="{{ .PrevInSection.Permalink }}"><< Previous Post</a>
-        {{ else }}
-        <p><strike><< Previous Post</strike></p>
-        {{ end }}
-    </p>
-    <p>|</p>
-    <p>
-        {{ if .NextInSection }}
-        <a href="{{ .NextInSection.Permalink }}">Next Post >></a>
-        {{ else }}
-        <p><strike>Next Post >></strike></p>
-        {{ end }}
-    </p>
-</div>
-
-<!--
-     <div style="font-size:0.8em;display:flex;gap:16px;justify-content:center;">
-     <p><< Previous Post</p>
-     <p>|</p>
-     <p>Next Post >></p>
-     </div>
--->
+{{- partial "post_navigator.html" . -}}
 
 <p>
   {{ range (.GetTerms "tags") }}
