@@ -32,6 +32,21 @@ For more information, read the official [setup guide][hugo-setup-guide] of Hugo.
 
 Please check out the [hugo.toml](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/hugo.toml) included in the [exampleSite](https://github.com/janraasch/hugo-bearblog/tree/master/exampleSite) of this theme.
 
+### Post Navigation Setting
+
+In case the user ends up reading more than one blog post, in order to read another they have
+to go to the `/blog` page.
+
+By enabling, in `hugo.toml`:
+
+```toml
+[params]
+    enablePostNavigator = true
+```
+
+It adds a navigator, at the end of the blog post content, so that the user can go to the next
+or previous post.
+
 ## Content & structure
 
 ### Starting fresh
@@ -64,6 +79,7 @@ hugo new blog/my-new-post.md
 
 Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file to find out which CSS-styles are applied by default.
 
+
 ## Remixes 🎭
 
 The community has created some interesting variations of Hugo ʕ•ᴥ•ʔ Bear Blog. While the main theme stays true to the minimal Bear Blog philosophy, these remixes experiment with additional features:
@@ -91,18 +107,18 @@ Run the `exampleSite` locally via
 hugo server --source ./exampleSite --themesDir ../..
 ```
 
-In case you want to test functionalities and have to use hugo commands you'll have to append ´--source ./exampleSite --themesDir ../..´ to them.
+In case you want to test functionalities and have to use hugo commands you'll have to append `--source ./exampleSite --themesDir ../..` to them.
 
 For example:
 
 ```bash
-hugo new blog/post.md --source ./exampleSite --themesDir ../..
+hugo new blog/my-new-post.md --source ./exampleSite --themesDir ../..
 ```
 
 Same thing for pages:
 
 ```bash
-hugo new page.md  --source ./exampleSite --themesDir ../..
+hugo new my-new-page.md  --source ./exampleSite --themesDir ../..
 ```
 
 ## Special Thanks 🎁
