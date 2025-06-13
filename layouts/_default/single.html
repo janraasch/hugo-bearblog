@@ -12,6 +12,9 @@
 <content>
   {{ .Content }}
 </content>
+
+{{- partial "post_navigator.html" . -}}
+
 <p>
   {{ range (.GetTerms "tags") }}
   <a href="{{ .Permalink }}">#{{ .LinkTitle }}</a>

@@ -44,6 +44,11 @@ ignoreErrors = ["error-disable-taxonomy"]
   # You can turn it off, but we would really appreciate if you don’t :-).
   # hideMadeWithLine = true
 
+  # By default, if you want to read more than one blog post you have to always go
+  # back to the /blog page.
+  # By enabling this feature each blog post will have at the end a navigator
+  # enablePostNavigator = true
+
   # By default, this theme displays dates with a format like "02 Jan, 2006", but
   # you can customize it by setting the `dateFormat` param in your site's config
   # file. See [Hugo's Format function docs](https://gohugo.io/functions/format/)
@@ -51,7 +56,7 @@ ignoreErrors = ["error-disable-taxonomy"]
   # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
   # dateFormat = "2006-01-02"
 
-# Configure markup highlighter to match "Bearblog" aesthetics, see 
+# Configure markup highlighter to match "Bearblog" aesthetics, see
 # https://gohugo.io/configuration/markup/#highlight
 [markup]
   [markup.highlight]
