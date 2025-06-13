@@ -45,7 +45,7 @@ By enabling, in `hugo.toml`:
 ```
 
 It adds a navigator, at the end of the blog post, so that the user can go to the next
-or previous post without having to go back to the `\blog` page.
+or previous post without having to go back to the `/blog` page.
 
 ## Content & structure
 
