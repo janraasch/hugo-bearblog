@@ -1,6 +1,6 @@
 {{ if (.Param "enablePostNavigator")}}
 {{if eq .Type "blog" }}
-<div style="font-size:0.8em;display:flex;gap:16px;justify-content:center;">
+<div class="post-navigator">
   <p>
     {{ if .PrevInSection }}
     <a href="{{ .PrevInSection.Permalink }}">
