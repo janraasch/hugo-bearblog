@@ -32,21 +32,6 @@ For more information, read the official [setup guide][hugo-setup-guide] of Hugo.
 
 Please check out the [hugo.toml](https://github.com/janraasch/hugo-bearblog/blob/master/exampleSite/hugo.toml) included in the [exampleSite](https://github.com/janraasch/hugo-bearblog/tree/master/exampleSite) of this theme.
 
-### Post Navigation Setting
-
-In case a user ends up reading more than one blog post, to read another they are forced to
-to go to the `/blog` page.
-
-By enabling, in `hugo.toml`:
-
-```toml
-[params]
-    enablePostNavigator = true
-```
-
-It adds a navigator, at the end of the blog post, so that the user can go to the next
-or previous post without having to go back to the `/blog` page.
-
 ## Content & structure
 
 ### Starting fresh
@@ -78,7 +63,6 @@ hugo new blog/my-new-post.md
 ### Adding your branding / colors / css
 
 Add a `custom_head.html`-file to your `layouts/partials`-directory. In there you may add a `<style>`-tag, *or* you may add a `<link>`-tag referencing your own `custom.css` (in case you prefer to have a separate `.css`-file). Check out the [`style.html`](https://github.com/janraasch/hugo-bearblog/blob/master/layouts/partials/style.html)-file to find out which CSS-styles are applied by default.
-
 
 ## Remixes 🎭
 
@@ -112,13 +96,13 @@ In case you want to test functionalities and use hugo commands, in the root dire
 For example:
 
 ```bash
-hugo new blog/my-new-post.md --source ./exampleSite --themesDir ../..
+hugo new blog/post.md --source ./exampleSite --themesDir ../..
 ```
 
 Same thing for pages:
 
 ```bash
-hugo new my-new-page.md  --source ./exampleSite --themesDir ../..
+hugo new page.md  --source ./exampleSite --themesDir ../..
 ```
 
 ## Special Thanks 🎁
