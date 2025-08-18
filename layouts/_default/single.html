@@ -13,9 +13,9 @@
   {{ .Content }}
 </content>
 
-{{ if (.Param "enablePostNavigator")}}
+{{ if eq .Type "blog" }}{{ if (.Param "enablePostNavigator")}}
 {{- partial "post_navigator.html" . -}}
-{{ end }}
+{{ end }}{{ end }}
 
 <p>
   {{ range (.GetTerms "tags") }}
