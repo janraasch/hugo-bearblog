@@ -38,7 +38,7 @@ jobs:
     if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v6
-      - uses: actions/download-artifact@v6
+      - uses: actions/download-artifact@v7
         with:
           name: build
           path: ./public
