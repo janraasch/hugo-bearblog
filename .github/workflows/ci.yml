@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v6
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3.0.0
+      uses: peaceiris/actions-hugo@v3.2.1
       with:
         hugo-version: latest
 
